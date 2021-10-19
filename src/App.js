@@ -46,7 +46,7 @@ export default function App() {
           onLeaveFeedback={onLeafFeedback}
         />
         <Section title={title.statistic}>
-          {countTotalFeedback ? (
+          {good || bad || neutral > 0 ? (
             <Statistics
               good={good}
               neutral={neutral}
